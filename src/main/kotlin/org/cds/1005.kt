@@ -1,21 +1,12 @@
 package org.cds
 
 
-/**
- * 登录页面上的品牌标识
- * @property logo 品牌logo地址
- * @property description 品牌描述
- * @constructor
- */
-data class CDSLoginPageBrandModel(
-    val logo: String,
-    val description: String
-)
 
 /**
  * 登录页面模型
  * @property backgroundImg 背景图
- * @property brand 品牌设置
+ * @property brandLogo 品牌logo
+ * @property brandDescription 品牌描述
  * @property firstTitle 登录表单卡片一级标题
  * @property secondTitle 登录表单卡片二级标题
  * @property form 登录表单
@@ -28,7 +19,8 @@ data class CDSLoginPageBrandModel(
 data class CDSLoginPageModel(
 
     val backgroundImg: String,
-    val brand: CDSLoginPageBrandModel,
+    val brandLogo: String,
+    val brandDescription: String,
 
     val firstTitle: String,
     val secondTitle: String,
